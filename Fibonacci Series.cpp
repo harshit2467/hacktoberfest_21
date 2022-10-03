@@ -4,23 +4,25 @@ The simplest is the series 1, 1, 2, 3, 5, 8, etc.
 Here is simplest C++ program for Fibonacci series
 */
 #include <iostream>
-using namespace std;
+using namespace std;    
 int main(){
 	int first=0;
 	int second=1;
-	int temp,num;
+	int sum=0,num;
 	cout<<"Enter a number: ";
 	cin>>num;
 	cout<<"Here is Fibonacci Series till "<<num<<endl;
 	cout<<first<<endl<<second<<endl;
-	for(int i=0; i<num-2; i++)
-	{
-		
-	temp=first +second;
-	    first=second;
-	    second=temp;
-		
-		cout<<temp<<endl;
-		
-	}
+    sum=first+second;
+     while(sum <= num)
+    {
+        cout<<sum<<endl;
+        first = second;
+        second = sum;
+        sum = first + second;
+    }
+     
+    return 0;
 }
+
+
