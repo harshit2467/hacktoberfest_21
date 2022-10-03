@@ -8,13 +8,13 @@ using namespace std;
 int main(){
 	int first=0;
 	int second=1;
-	int sum=0,num;
+	int sum=0,n;
 	cout<<"Enter a number: ";
-	cin>>num;
-	cout<<"Here is Fibonacci Series till "<<num<<endl;
+	cin>>n;
+	cout<<"Here is Fibonacci Series till "<<n<<endl;
 	cout<<first<<endl<<second<<endl;
     sum=first+second;
-     while(sum <= num)
+     while(sum <= n)
     {
         cout<<sum<<endl;
         first = second;
